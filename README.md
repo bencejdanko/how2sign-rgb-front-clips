@@ -6,7 +6,7 @@ This repository contains some preparation scripts for uploading structured front
 
 Data sourced from [How2Sign](https://how2sign.github.io/).
 
----
+![alt text](image.png)
 
 # Instructions
 
@@ -26,37 +26,10 @@ train_rgb_front_clips/raw_videos
 val_rgb_front_clips/raw_videos
 ```
 
-# Ongoing issues
-
-https://github.com/how2sign/how2sign.github.io/issues/23
-
-- missing, missaligned annotations
-
-# Huggingface Patterns for Datasets
-
-## VideoFolder
-
-https://huggingface.co/docs/datasets/video_dataset
-
-## Approach
-
-Our desired output is:
-
-```
-hf_ready/
-├── train/
-│   ├── metadata.csv
-│   ├── video_001.mp4
-│   ├── video_002.mp4
-├── val/
-│   ├── metadata.csv
-│   ├── ...
-```
-
-## Commands
+# Commands
 
 ```bash
-# create symlinks && metadata
+# embed json metadata && create tar shards
 python3 prepare.py
 ```
 
