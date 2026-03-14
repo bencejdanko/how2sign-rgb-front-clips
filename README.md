@@ -8,6 +8,19 @@ Data sourced from [How2Sign](https://how2sign.github.io/).
 
 ![alt text](image.png)
 
+> [!IMPORTANT]
+> There is a known mismatch in the official release where several videos listed in the .csv annotations are physically missing from the raw video directories.
+>
+> The dataset omits text annotation that lacked a corresponding .mp4 file.
+>
+> Total Omitted: Train (118), Val (2), Test (14)
+>
+> See the generated dropped_<split>.txt files for the exact list of omitted filenames.
+
+# Approach
+
+We read the standard dataset splits (train, val, test) from CSV metadata and cross-references them against raw .mp4 files. Each relevant CSV row data for each video in converted into an individualized JSON object. We tar shard video files (.mp4) alongside their corresponding metadata (.json) into sequentially numbered .tar archives, batching them into structured shards of 1,000 samples each.
+
 # Instructions
 
 Make sure you have your data sourced to a single folder
