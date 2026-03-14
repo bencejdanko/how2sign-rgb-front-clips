@@ -1,8 +1,8 @@
-# Prepare How2Sign
+# how2sign-rgb-front-clips
 
-The original How2Sign data is hosted on Google Drive, which has currently run out of Google download "quota", making access difficult.
+The HuggingFace dataset can be collected from [bdanko/how2sign-rgb-front-clips](https://huggingface.co/datasets/bdanko/how2sign-rgb-front-clips).
 
-This repository contains some preparation scripts for uploading structured front-view clips to HuggingFace.
+The full How2Sign dataset is hosted on Google Drive, which has currently run out of Google download "quota", making community access difficult. This repository contains some preparation scripts for uploading front-view clips to HuggingFace in a structured way.
 
 Data sourced from [How2Sign](https://how2sign.github.io/).
 
