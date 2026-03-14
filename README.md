@@ -15,7 +15,7 @@ Data sourced from [How2Sign](https://how2sign.github.io/).
 >
 > Total Omitted: Train (118), Val (2), Test (14)
 >
-> See the generated dropped_<split>.txt files for the exact list of omitted filenames.
+> See the generated missing_{split}.txt files for the exact list of omitted filenames.
 
 # Approach
 
