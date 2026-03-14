@@ -8,6 +8,12 @@ Data sourced from [How2Sign](https://how2sign.github.io/).
 
 ![alt text](image.png)
 
+| Split | Count |
+| :--- | :--- |
+| Train | 31047 |
+| Val | 1739 |
+| Test | 2343 |
+
 > [!IMPORTANT]
 > There is a known mismatch in the official release where several videos listed in the .csv annotations are physically missing from the raw video directories.
 >
